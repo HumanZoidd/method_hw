@@ -10,7 +10,7 @@ public class Main {
         scanner.close();
     }
     public static String checkLeapYear(int AYear) {
-        if (AYear % 4 == 0 && AYear % 100 != 1 && AYear % 400 == 0) {
+        if (AYear % 4 == 0 && AYear % 100 != 0 || AYear % 400 == 0) {
             return AYear + " год - високосный год.";
         } else {
             return AYear + " год - не високосный год. ";
